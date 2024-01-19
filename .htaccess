@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Redirigir solicitudes de error 404 a la página personalizada
+# ErrorDocument 404 https://davidar55.github.io/MyPortfolio/404
+ErrorDocument 404 http://localhost/myportfolio/404
+
+# Redirigir solicitud /inicio a php/views/inicio.php
+RewriteRule ^home$ php/views/home.php [L]
+
+# Ejecuciones correctas
+RewriteRule ^200$ php/views/success/200.php [L]
+
+# Errores varios
+RewriteRule ^404$ php/views/errors/404.php [L]
+
+# Redirigir todas las solicitudes que no coincidan con archivos existentes a /404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^404.*$ /404 [L]
