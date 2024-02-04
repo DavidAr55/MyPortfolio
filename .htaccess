@@ -2,8 +2,7 @@ Options +FollowSymLinks
 RewriteEngine On
 
 # Redirigir solicitudes de error 404 a la página personalizada
-# ErrorDocument 404 https://davidar55.github.io/MyPortfolio/404
-ErrorDocument 404 http://localhost/myportfolio/404
+ErrorDocument 404 https://davidswebsite55.000webhostapp.com/404
 
 # Redirigir solicitud /inicio a php/views/inicio.php
 RewriteRule ^home$ php/views/home.php [L]

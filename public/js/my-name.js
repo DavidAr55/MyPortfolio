@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (index === nombreCompleto.length) {
                 clearInterval(intervalId);
             }
-        }, 100);
+        }, 150);
     }
 
     escribirNombre();

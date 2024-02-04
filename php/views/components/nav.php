@@ -1,5 +1,5 @@
 <nav>
-    <img src="public/images/Logo D'ar55.png" alt="DavidAr55 Logo" onclick="redirectToHome()">
+    <img src="public/images/Logo-Dar55.png" alt="DavidAr55 Logo" onclick="redirectToHome()">
     <div class="container-nav-buttons">
         <ul>
             <li><a href="#Work">Work</a></li>
