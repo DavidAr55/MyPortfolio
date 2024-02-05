@@ -20,54 +20,8 @@ $session = new Session();
     <!-- Componentes generales del <NAV/> -->
     <?php require_once "components/nav.php"; ?>
 
-    <!-- <swal2> -->
-    <?php if ($session->issetSession('executeSuccess')) : ?>
-        <script>
-            let mensaje = '<?php echo $session->getSession('executeSuccess'); ?>'
-            Swal.fire({
-                title: "¡Listo!",
-                text: mensaje,
-                icon: "success",
-                customClass: {
-                    title: 'my-swal-title-class',
-                    content: 'my-swal-content-class',
-                },
-            });
-        </script>
-    <?php $session->removeSession('executeSuccess');
-    endif; ?>
-
-    <?php if ($session->issetSession('executeError')) : ?>
-        <script>
-            let mensaje = '<?php echo $session->getSession('executeError'); ?>'
-            Swal.fire({
-                title: "Error!",
-                text: mensaje,
-                icon: "error",
-                customClass: {
-                    title: 'my-swal-title-class',
-                    content: 'my-swal-content-class',
-                },
-            });
-        </script>
-    <?php $session->removeSession('executeError');
-    endif; ?>
-
-    <?php if ($session->issetSession('executeWarning')) : ?>
-        <script>
-            let mensaje = '<?php echo $session->getSession('executeWarning'); ?>'
-            Swal.fire({
-                title: "Advertencia!",
-                text: mensaje,
-                icon: "warning",
-                customClass: {
-                    title: 'my-swal-title-class',
-                    content: 'my-swal-content-class',
-                },
-            });
-        </script>
-    <?php $session->removeSession('executeWarning');
-    endif; ?>
+    <!-- Alertaras -->
+    <?php require_once "components/alerts.php"; ?>
 
     <section class="container-me">
         <div class="container-me-info">
@@ -89,7 +43,7 @@ $session = new Session();
                         <b id='white'>3&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"name"</b> <b id="white">=></b> <b id="brown">"<span id="nombre"></span><span class='cursor'></span>"</b><b id="white">,</b><br>
                         <b id='gray'>4&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"age"</b> <b id="white">=></b> <b id="green"><?php echo $edadCalculada; ?></b><b id="white">,</b><br>
                         <b id='gray'>5&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"occupation"</b> <b id="white">=></b> <b id="brown">"Software Development Engineer"</b><b id="white">,</b><br>
-                        <b id='gray'>6&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"top_tech_stack"</b> <b id="white">=></b> <b id="purple">[</b><b id="brown">"PHP"</b><b id="white">,</b> <b id="brown">"C#/C++/C"</b><b id="white">,</b> <b id="brown">"Java"</b><b id="white">,</b> <b id="brown">"Python"</b><b id="purple">]</b><br>
+                        <b id='gray'>6&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"languages"</b> <b id="white">=></b> <b id="purple">[</b><b id="brown">"PHP"</b><b id="white">,</b> <b id="brown">"C++"</b><b id="white">,</b> <b id="brown">"Java"</b><b id="white">,</b> <b id="brown">"Python"</b><b id="white">,</b> <b id="brown">"Js"</b><b id="purple">]</b><br>
                     <b id='gray'>7&nbsp;&nbsp;</b><b id="yellow-2">)</b><b id="white">;</b><br>
                     <?php echo "<b id='gray'>8&nbsp;&nbsp;</b><b id='blue-1'>?&gt</b>"; ?>
                 </code>
