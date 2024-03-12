@@ -6,9 +6,9 @@
         private $database = "davidar55";
 
         /*private $host = "localhost";
-        private $username = "id17593263_root";
-        private $password = "2(6Li@hp^%5h";
-        private $database = "id17593263_davidar55";*/
+        private $username = "ueyvwrltumbx3";
+        private $password = "mxekrhznfyya";
+        private $database = "dbupn9cqudkdd1";*/
         
         private $connection;
     

@@ -81,7 +81,7 @@ require_once 'config.php';
     </style>
 </head>
 <body>
-    <img src="public/images/Logo D'ar55.png">
+    <img src="public/images/Logo-Dar55.png">
     <h1 id="status">David's Portfolio, Loading repository</h1><br>
 </body>
 </html>

@@ -19,6 +19,19 @@
 
     --my-color-1: #003bb9;
     --my-color-2: #002064;
+    --my-color-3: rgb(221, 249, 253);
+    --my-color-4: #3474ff;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover {
+    color: var(--my-color-1);
+    transition: all .3s;
 }
 
 body {
@@ -99,7 +112,7 @@ nav img:hover {
 
 .container-me-info {
     display: grid;
-    width: 900px;
+    width: 1000px;
     height: 400px;
 
     margin: auto;
@@ -336,107 +349,118 @@ nav img:hover {
     padding-top: 125px;
 }
 
-.my-portfolio-head h3 {
+h3 {
     font-family: "General Sans Bold";
 }
 
-.my-portfolio-head h1 {
+.fa-arrow-up-right-from-square {
+    font-size: 20px;
+}
+
+h1 {
     font-family: 'DM Sans', sans-serif;
+}
+
+.my-portfolio-head h1 {
     font-weight: 1000;
     font-size: 50px;
 }
 
-.my-portfolio-body-left {
+.container-work {
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0 25px 0;
     display: grid;
-    width: 100%;
+    grid-template-columns: 30% 70%;
+    transition: all .3s;
+}
+
+.container-work:hover {
+    background-color: var(--bg-light-tertiary);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.container-screen-shot img {
+    max-width: 90%;
     height: auto;
-    grid-template-columns: 70% 30%;
-    margin-top: 60px;
-    margin-bottom: 100px;
+
+    border-radius: 10px;
+    border: 2px solid var(--my-color-1);
+    transition: all .3s;
 }
 
-.media-container {
-    width: 100%;
-    height: auto;
+.container-work:hover .container-screen-shot img {
+    border: 2px solid var(--my-color-4);
+    transition: all .3s;
+    max-width: 92.5%;
+    margin-left: -1.75%;
+    margin-top: -1.75%;
 }
 
-.media-container h2 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 1000;
-    font-size: 40px;
-}
-
-.media-container h2 a {
-    font-size: 30px;
-    color: var(--bg-dark-secundary);
-    transition: color 300ms;
-}
-
-.media-container h2 a:hover {
+.container-work:hover .my-work h3 {
     color: var(--my-color-1);
-    transition: color 300ms;
+    transition: all .3s;
 }
 
-.description-container {
+.my-work {
+    text-align: justify;
+    margin: 10px 0; 
+}
+
+.container-tecnologies {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: auto;
+}
+
+.python {
+    background-color: #519aba;
+}
+
+.python:hover {
+    background-color: #0b4b66;
+}
+
+.php {
+    background-color: #9a74b1;
+}
+
+.php:hover {
+    background-color: #563669;
+}
+
+.java {
+    background-color: #cd3c40;
+}
+
+.java:hover {
+    background-color: #6e171a;
+}
+
+.technology {
+    padding: 5px 20px;
+    /* background-color: var(--my-color-1); */
+    color: var(--bg-light-primary);
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
     
-    padding: 15px;
-    padding-left: 40px;
+    transition: all .3s;
 }
 
-.my-portfolio-body-right {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 35% 65%;
-    margin-top: 60px;
-    margin-bottom: 100px;
+.technology:hover {
+    padding: 5px 25px;
+    /* background-color: var(--my-color-2); */
+
+    transition: all .3s;
 }
 
-.my-portfolio-body-right .description-container {
-    padding-right: 40px;
-}
-
-.my-portfolio-body-right .media-container {
-    text-align: right;
-}
-
-.desc-hidde-1 {
-    display: none;
-}
 
 @media(max-width: 1000px) {
     .container-my-work {
         width: 90%;
 
         padding-top: 125px;
-    }
-}
-
-@media(max-width: 900px) {
-    .my-portfolio-body-left {
-        grid-template-columns: 100%;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
-    .my-portfolio-body-right {
-        grid-template-columns: 100%;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
-    .desc-hidde-1 {
-        display: block;
-    }
-
-    .desc-hidde-2 {
-        display: none;
-    }
-
-    .my-portfolio-body-right .media-container {
-        text-align: left;
     }
 }
 
@@ -512,6 +536,62 @@ nav img:hover {
     margin-top: 10px;
 }
 
+.my-portfolio-body {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 300%; /* Ajusta según sea necesario */
+}
+
+.language {
+    flex: 1;
+    min-width: 100%;
+}
+
+.container-work {
+    /* Your existing styles */
+    cursor: pointer; /* Add this to show the pointer cursor on hover */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 @media(max-width: 1100px) {
     .container-about-me {
         width: 90%;
@@ -580,7 +660,7 @@ footer {
     color: white;
     font-size: 19px;
 
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 #inputMensaje {
