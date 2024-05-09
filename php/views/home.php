@@ -29,9 +29,9 @@ $session = new Session();
                 <img src="public/images/yo.jpg" alt="David Loera">
                 <div class="container-my-network-buttons">
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/david-arturo-loera-olmos-0b7b28181/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/david-a-loera-olmos-0b7b28181/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href="https://github.com/DavidAr55" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="public/cv/CV - David Arturo Loera Olmos.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a></li>
+                        <li><a href="public/cv/Cv-David Arturo Loera Olmos.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a></li>
                         <li><a href="mailto:davidarturoloera@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@ $session = new Session();
                         <b id='white'>3&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"name"</b> <b id="white">=></b> <b id="brown">"<span id="nombre"></span><span class='cursor'></span>"</b><b id="white">,</b><br>
                         <b id='gray'>4&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"age"</b> <b id="white">=></b> <b id="green"><?php echo $edadCalculada; ?></b><b id="white">,</b><br>
                         <b id='gray'>5&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"occupation"</b> <b id="white">=></b> <b id="brown">"Software Development Engineer"</b><b id="white">,</b><br>
-                        <b id='gray'>6&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"languages"</b> <b id="white">=></b> <b id="purple">[<b id="brown">"Python"</b><b id="white">,</b> </b><b id="brown">"PHP"</b><b id="white">,</b> <b id="brown">"Java"</b><b id="white">,</b> <b id="brown">"C/C++/C#"</b><b id="white">,</b> <b id="brown">"Js"</b><b id="purple">]</b><br>
+                        <b id='gray'>6&nbsp;&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;<b id="brown">"languages"</b> <b id="white">=></b> <b id="purple">[<b id="brown">"PHP"</b><b id="white">,</b> </b><b id="brown">"Python"</b><b id="white">,</b> <b id="brown">"Java"</b><b id="white">,</b> <b id="brown">"C/C++/C#"</b><b id="white">,</b> <b id="brown">"Js"</b><b id="purple">]</b><br>
                     <b id='gray'>7&nbsp;&nbsp;</b><b id="yellow-2">)</b><b id="white">;</b><br>
                     <?php echo "<b id='gray'>8&nbsp;&nbsp;</b><b id='blue-1'>?&gt</b>"; ?>
                 </code>
@@ -53,37 +53,220 @@ $session = new Session();
 
     <section class="container-my-work" id="Work">
         <div class="my-portfolio-head">
-            <h3>-Portfolio</h3>
-            <h1>My Experience</h1>
+            <h3 class="h3-title">-Portfolio</h3>
+            <h1 class="h1-title">My Experience</h1>
         </div>
 
         <div class="container mt-5">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" id="myTabs">
                 <li class="nav-item">
-                    <a class="nav-link active" id="python-tab" data-toggle="tab" href="#python">Python</a>
+                    <a class="nav-link active" id="php-tab" data-toggle="tab" href="#php">PHP</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="php-tab" data-toggle="tab" href="#php">PHP</a>
+                    <a class="nav-link" id="python-tab" data-toggle="tab" href="#python">Python</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" id="java-tab" data-toggle="tab" href="#java">Java</a>
-                </li> -->
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content mt-2">
+                <div class="tab-pane fade show active" id="php">
+                    <h3 class="h3-title">PHP Projects</h3>
+                    <!-- Hello World -->
+                    <div class="container-work">
+                        <a href="https://test.hello-world.space/" target="_blank">
+                            <div class="container-screen-shot">
+                                <img src="public/images/work/php/hello-world.png" alt="Hello-World">
+                            </div>
+                        </a>
+                        <div class="my-work">
+                            <h3 class="h3-title"><a href="https://test.hello-world.space/" target="_blank">Hello World <b>(Work in progress)</b> <i class="fa-solid fa-arrow-up-right-from-square"></i></a> | <a href="https://github.com/DavidAr55/hello-world" target="_blank"><i class="fa-brands fa-github"></i></a></h3>
+                            <ul>
+                                <li>
+                                    <p>Hello-World is an innovative educational platform tailored for those looking to master programming logic effectively and engagingly.</p>
+                                </li>
+                                <li>
+                                    <p>Our web application offers a unique experience by seamlessly integrating programming logic instruction with real-time compilation capabilities.</p>
+                                </li>
+                                <li>
+                                    <p>With the assistance of our cutting-edge virtual tutor, users are guided through interactive lessons, enabling them to grasp complex concepts in an accessible and enjoyable manner. At Hello-World, you not only learn to code but do so with a practical, real-time approach!</p>
+                                </li>
+                            </ul> 
+                            <div class="container-tecnologies">
+                                <div class="technology php">PHP</div>
+                                <div class="technology php">Laravel</div>
+                                <div class="technology php">MySQL</div>
+                                <div class="technology php">Google cloud</div>
+                                <div class="technology php">Chat GPT API</div>
+                                <div class="technology php">PHP Mailer</div>
+                                <div class="technology php">Bootstrap</div>
+                                <div class="technology php">JavaScript</div>
+                                <div class="technology php">Ajax</div>
+                                <div class="technology php">Swal2</div>
+                                <div class="technology php">HTML & CSS</div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="tab-pane fade show active" id="python">
-                    <h3>Python Projects</h3>
+                    <!-- Nine Minutes Pizza -->
+                    <div class="container-work">
+                        <a href="https://nineminutes.com.mx/" target="_blank">
+                            <div class="container-screen-shot">
+                                <img src="public/images/work/php/nine minutes pizza.png" alt="Nine Minutes Pizza">
+                            </div>
+                        </a>
+                        <div class="my-work">
+                            <h3 class="h3-title"><a href="https://nineminutes.com.mx/" target="_blank">Nine Minutes Pizza <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                            <ul>
+                                <li>
+                                    <p>Website and ordering system for <b>"Nine Minutes Pizza"</b> fast-food chain.</p>
+                                </li>
+                                <li>
+                                    <p>The challenge in this project was the franchise's desire to reduce dependence on delivery apps like <b>"Rappi"</b> or <b>"Didi Food."</b></p>
+                                </li>
+                                <li>
+                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
+                                </li>
+                                <li>
+                                    <p><b>The repository is private due to legal agreements.</b></p>
+                                </li>
+                            </ul>
+                            <div class="container-tecnologies">
+                                <div class="technology php">PHP</div>
+                                <div class="technology php">Laravel</div>
+                                <div class="technology php">MySQL</div>
+                                <div class="technology php">Google Maps API</div>
+                                <div class="technology php">Ajax</div>
+                                <div class="technology php">PHP Mailer</div>
+                                <div class="technology php">Bootstrap</div>
+                                <div class="technology php">JavaScript</div>
+                                <div class="technology php">Swal2</div>
+                                <div class="technology php">HTML & CSS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Makaza -->
+                    <div class="container-work">
+                        <a href="https://makaza.com.mx/" target="_blank">
+                            <div class="container-screen-shot">
+                                <img src="public/images/work/php/makaza.png" alt="Makaza">
+                            </div>
+                        </a>
+                        <div class="my-work">
+                            <h3 class="h3-title"><a href="https://makaza.com.mx/" target="_blank">Makaza <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                            <ul>
+                                <li>
+                                    <p>It is a website for the company <b>Makaza</b>, where its clients can land and learn about the company, view its products and contacts.</p>
+                                </li>
+                                <li>
+                                    <p>It features an administration panel for managing products and company information.</p>
+                                </li>
+                                <li>
+                                    <p><b>The repository is private due to legal agreements.</b></p>
+                                </li>
+                            </ul>
+                            <div class="container-tecnologies">
+                                <div class="technology php">PHP</div>
+                                <div class="technology php">MySQL</div>
+                                <div class="technology php">JavaScript</div>
+                                <div class="technology php">JQuery</div>
+                                <div class="technology php">Ajax</div>
+                                <div class="technology php">Swal2</div>
+                                <div class="technology php">Bootstrap</div>
+                                <div class="technology php">HTML & CSS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canvolt -->
+                    <div class="container-work">
+                        <a href="https://canvolt.com.mx/" target="_blank">
+                            <div class="container-screen-shot">
+                                <img src="public/images/work/php/canvolt.png" alt="Canvolt">
+                            </div>
+                        </a>
+                        <div class="my-work">
+                            <h3 class="h3-title"><a href="https://canvolt.com.mx/" target="_blank">Canvolt <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                            <ul>
+                                <li>
+                                    <p>Website for purchasing, information, and contacting "Canvolt," an electric scooter workshop.</p>
+                                </li>
+                                <li>
+                                    <p>The challenge in this project was the workshop's need to establish an online presence for promotion and direct interaction with customers.</p>
+                                </li>
+                                <li>
+                                    <p>This project enables customers to connect directly with the workshop, place orders, request repairs, all seamlessly integrated with their web system "sistema.canvolt."</p>
+                                </li>
+                                <li>
+                                    <p><b>The repository is private due to legal agreements.</b></p>
+                                </li>
+                            </ul>
+                            <div class="container-tecnologies">
+                                <div class="technology php">PHP</div>
+                                <div class="technology php">Laravel</div>
+                                <div class="technology php">MySQL</div>
+                                <div class="technology php">JavaScript</div>
+                                <div class="technology php">JQuery</div>
+                                <div class="technology php">Swal2</div>
+                                <div class="technology php">Bootstrap</div>
+                                <div class="technology php">HTML & CSS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sistema de Canvolt -->
+                    <div class="container-work">
+                        <a href="https://sistema.canvolt.com.mx/" target="_blank">
+                            <div class="container-screen-shot">
+                                <img src="public/images/work/php/sistema.canvolt.png" alt="Sistema de Canvolt">
+                            </div>
+                        </a>
+                        <div class="my-work">
+                            <h3 class="h3-title"><a href="https://sistema.canvolt.com.mx/" target="_blank">Sistema Canvolt <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                            <ul>
+                                <li>
+                                    <p>The Canvolt system is a comprehensive web application designed for mechanics at the Canvolt electric scooter repair workshop. </p>
+                                </li>
+                                <li>
+                                    <p>It facilitates order processing, sales inquiries, invoicing, and offers performance tracking through graphs and statistics for the entire year. </p>
+                                </li>
+                                <li>
+                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
+                                </li>
+                                <li>
+                                    <p><b>The repository is private due to legal agreements.</b></p>
+                                </li>
+                            </ul>
+                            <div class="container-tecnologies">
+                                <div class="technology php">PHP</div>
+                                <div class="technology php">Laravel</div>
+                                <div class="technology php">TCPDF</div>
+                                <div class="technology php">PHP Mailer</div>
+                                <div class="technology php">Ajax</div>
+                                <div class="technology php">Bootstrap</div>
+                                <div class="technology php">JavaScript</div>
+                                <div class="technology php">JQuery</div>
+                                <div class="technology php">Swal2</div>
+                                <div class="technology php">Chart.js</div>
+                                <div class="technology php">HTML & CSS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="python">
+                    <h3 class="h3-title">Python Projects</h3>
                     
                     <!-- FlaskyLinux Command Hub -->
                     <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/python/flaskylinux command hub.png" alt="FlaskyLinux Command Hub">
-                        </div>
+                        <a href="https://davidloera-flask.info/" target="_blank">
+                            <div class="container-screen-shot">
+                                <img src="public/images/work/python/flaskylinux command hub.png" alt="FlaskyLinux Command Hub">
+                            </div>
+                        </a>
                         <div class="my-work">
-                            <h3><a href="https://davidloera-flask.info/" target="_blank">FlaskyLinux Command Hub <i class="fa-solid fa-arrow-up-right-from-square"></i></a> | <a href="https://github.com/DavidAr55/bash-users" target="_blank"><i class="fa-brands fa-github"></i></a></h3>
+                            <h3 class="h3-title"><a href="https://davidloera-flask.info/" target="_blank">FlaskyLinux Command Hub <i class="fa-solid fa-arrow-up-right-from-square"></i></a> | <a href="https://github.com/DavidAr55/bash-users" target="_blank"><i class="fa-brands fa-github"></i></a></h3>
                             <ul>
                                 <li>
                                     <p>This project was designed for demonstration purposes, showcasing: basic administration of a <b>'Linux/Debian 12'</b> server.</p>
@@ -116,250 +299,20 @@ $session = new Session();
                         </div>
                     </div>
                 </div>
-
-                <div class="tab-pane fade" id="php">
-
-                    <h3>PHP Projects</h3>
-                    <!-- Nine Minutes Pizza -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/php/nine minutes pizza.png" alt="Nine Minutes Pizza">
-                        </div>
-                        <div class="my-work">
-                            <h3>Nine Minutes Pizza <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>Website and ordering system for <b>"Nine Minutes Pizza"</b> fast-food chain.</p>
-                                </li>
-                                <li>
-                                    <p>The challenge in this project was the franchise's desire to reduce dependence on delivery apps like <b>"Rappi"</b> or <b>"Didi Food."</b></p>
-                                </li>
-                                <li>
-                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
-                                </li>
-                                <li>
-                                    <p><b>The repository is private due to legal agreements.</b></p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology php">PHP</div>
-                                <div class="technology php">Laravel</div>
-                                <div class="technology php">MySQL</div>
-                                <div class="technology php">Google Maps API</div>
-                                <div class="technology php">Ajax</div>
-                                <div class="technology php">PHP Mailer</div>
-                                <div class="technology php">Bootstrap</div>
-                                <div class="technology php">JavaScript</div>
-                                <div class="technology php">Swal2</div>
-                                <div class="technology php">HTML & CSS</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Makaza -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/php/makaza.png" alt="Makaza">
-                        </div>
-                        <div class="my-work">
-                            <h3>Makaza <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>It is a website for the company <b>Makaza</b>, where its clients can land and learn about the company, view its products and contacts.</p>
-                                </li>
-                                <li>
-                                    <p>It features an administration panel for managing products and company information.</p>
-                                </li>
-                                <li>
-                                    <p><b>The repository is private due to legal agreements.</b></p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology php">PHP</div>
-                                <div class="technology php">MySQL</div>
-                                <div class="technology php">JavaScript</div>
-                                <div class="technology php">JQuery</div>
-                                <div class="technology php">Ajax</div>
-                                <div class="technology php">Swal2</div>
-                                <div class="technology php">Bootstrap</div>
-                                <div class="technology php">HTML & CSS</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Canvolt -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/php/canvolt.png" alt="Canvolt">
-                        </div>
-                        <div class="my-work">
-                            <h3>Canvolt <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>Website for purchasing, information, and contacting "Canvolt," an electric scooter workshop.</p>
-                                </li>
-                                <li>
-                                    <p>The challenge in this project was the workshop's need to establish an online presence for promotion and direct interaction with customers.</p>
-                                </li>
-                                <li>
-                                    <p>This project enables customers to connect directly with the workshop, place orders, request repairs, all seamlessly integrated with their web system "sistema.canvolt."</p>
-                                </li>
-                                <li>
-                                    <p><b>The repository is private due to legal agreements.</b></p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology php">PHP</div>
-                                <div class="technology php">Laravel</div>
-                                <div class="technology php">MySQL</div>
-                                <div class="technology php">JavaScript</div>
-                                <div class="technology php">JQuery</div>
-                                <div class="technology php">Swal2</div>
-                                <div class="technology php">Bootstrap</div>
-                                <div class="technology php">HTML & CSS</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sistema de Canvolt -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/php/sistema.canvolt.png" alt="Sistema de Canvolt">
-                        </div>
-                        <div class="my-work">
-                            <h3>Sistema Canvolt <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>The Canvolt system is a comprehensive web application designed for mechanics at the Canvolt electric scooter repair workshop. </p>
-                                </li>
-                                <li>
-                                    <p>It facilitates order processing, sales inquiries, invoicing, and offers performance tracking through graphs and statistics for the entire year. </p>
-                                </li>
-                                <li>
-                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
-                                </li>
-                                <li>
-                                    <p><b>The repository is private due to legal agreements.</b></p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology php">PHP</div>
-                                <div class="technology php">Laravel</div>
-                                <div class="technology php">TCPDF</div>
-                                <div class="technology php">PHP Mailer</div>
-                                <div class="technology php">Ajax</div>
-                                <div class="technology php">Bootstrap</div>
-                                <div class="technology php">JavaScript</div>
-                                <div class="technology php">JQuery</div>
-                                <div class="technology php">Swal2</div>
-                                <div class="technology php">Chart.js</div>
-                                <div class="technology php">HTML & CSS</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="tab-pane fade" id="java">
-                    <h3>Java Projects</h3>
-                    
-                    <!-- Agenda App -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/java/agenda.png" alt="Student Personal Agenda Application">
-                        </div>
-                        <div class="my-work">
-                            <h3>Student Personal Agenda App <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>Website and ordering system for "Nine Minutes Pizza" fast-food chain.</p>
-                                </li>
-                                <li>
-                                    <p>The challenge in this project was the franchise's desire to reduce dependence on delivery apps like "Rappi" or "Didi Food."</p>
-                                </li>
-                                <li>
-                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology java">Java</div>
-                                <div class="technology java">Android Studio</div>
-                                <div class="technology java">SQLite</div>
-                                <div class="technology java">ZXing</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Texto a Binario RMI -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/java/rmi.png" alt="Conversor de Texto a Binario RMI">
-                        </div>
-                        <div class="my-work">
-                            <h3>RMI Text to Binary Converter <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>Website and ordering system for "Nine Minutes Pizza" fast-food chain.</p>
-                                </li>
-                                <li>
-                                    <p>The challenge in this project was the franchise's desire to reduce dependence on delivery apps like "Rappi" or "Didi Food."</p>
-                                </li>
-                                <li>
-                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology java">Java</div>
-                                <div class="technology java">Swing</div>
-                                <div class="technology java">Java RMI</div>
-                                <div class="technology java">Thread</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Animacion Graficas 3D -->
-                    <div class="container-work">
-                        <div class="container-screen-shot" onclick="showImage(this)">
-                            <img src="public/images/work/java/ghast.png" alt="Minecraft Ghast 3D Animation">
-                        </div>
-                        <div class="my-work">
-                            <h3>Minecraft Ghast 3D Animation <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                            <ul>
-                                <li>
-                                    <p>Website and ordering system for "Nine Minutes Pizza" fast-food chain.</p>
-                                </li>
-                                <li>
-                                    <p>The challenge in this project was the franchise's desire to reduce dependence on delivery apps like "Rappi" or "Didi Food."</p>
-                                </li>
-                                <li>
-                                    <p>This solution empowers customers to place orders directly on the website, whether for pickup at the store or delivery to their homes.</p>
-                                </li>
-                            </ul>
-                            <div class="container-tecnologies">
-                                <div class="technology java">Java</div>
-                                <div class="technology java">Swing</div>
-                                <div class="technology java">Graphics 2D</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
             <div class="modal" id="imageModal">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <img class="modal-content" id="modalImage">
             </div>
-
         </div>
-
     </section>
 
     <section class="container-about" id="About">
         <div class="container-about-me">
             <div class="my-portfolio-head">
-                <h3>-Portfolio</h3>
-                <h1>About Me</h1>
+                <h3 class="h3-title">-Portfolio</h3>
+                <h1 class="h1-title">About Me</h1>
             </div>
             <div class="about-me">
                 <div class="column">
@@ -373,7 +326,7 @@ $session = new Session();
                 </div>
             </div>
             <div class="technologies-list">
-                <h1>Versatile Mastery of Software Development Technologies</h1>
+                <h1 class="h1-title">Versatile Mastery of Software Development Technologies</h1>
                 <div class="container-technologies-list">
                     <!-- Primera Fila -->
                     <div class="technology-item"><img src="public/images/technologies/debian.png" alt="Linux Debian"><br><b>Linux/Debian</b></div>
@@ -415,6 +368,7 @@ $session = new Session();
                     <div class="technology-item"><img src="public/images/technologies/Android-studio.png" alt="Android Studio"><br><b>Android Studio</b></div>
                     <div class="technology-item"><img src="public/images/technologies/Photoshop.png" alt="Adobe Photoshop"><br><b>Photoshop</b></div>
                     <div class="technology-item"><img src="public/images/technologies/Illustrator.png" alt="Adobe Illustrator"><br><b>Illustrator</b></div>
+                    <div class="technology-item"><img src="public/images/technologies/figma.png" alt="Figma"><br><b>Figma</b></div>
                 </div>
             </div>
         </div>

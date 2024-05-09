@@ -1,7 +1,7 @@
 <footer id="Contact">
     <section class="container-footer">
         <div class="footer-column">
-            <h1>Wanna contact me?</h1>
+            <h1 class="h1-title">Wanna contact me?</h1>
             <p>Please feel free to reach out for any inquiries or to share your thoughts. I welcome your questions and appreciate your feedback. Your input is valuable, and I'm here to assist you in any way I can. Thank you for considering getting in touch.</p>
         </div>
         <div class="footer-column">

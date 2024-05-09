@@ -23,6 +23,14 @@
     --my-color-4: #3474ff;
 }
 
+.h1-title {
+    font-size: 50px;
+}
+
+.h3-title {
+    font-size: 28px;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -261,10 +269,16 @@ nav img:hover {
 }
 
 @media (max-width: 1000px) {
+    .container-me {
+        height: 100%;
+        padding: 15px 0;
+    }
+
     .container-me-info {
         grid-template-columns: 100%;
         width: 100%;
-        max-width: 415px;
+        max-width: 455px;
+        overflow-x: scroll;
         margin: auto;
         height: auto;
         margin-top: 35px;
@@ -363,7 +377,6 @@ h1 {
 
 .my-portfolio-head h1 {
     font-weight: 1000;
-    font-size: 50px;
 }
 
 .container-work {
@@ -382,7 +395,7 @@ h1 {
 }
 
 .container-screen-shot img {
-    max-width: 90%;
+    width: 90%;
     height: auto;
 
     border-radius: 10px;
@@ -497,7 +510,6 @@ h1 {
 .technologies-list h1 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 1000;
-    font-size: 50px;
     padding-top: 100px;
     padding-bottom: 20px;
 }
@@ -717,5 +729,37 @@ label {
 @media(max-width: 550px) {
     .container-footer {
         width: 90%;
+    }
+}
+
+
+@media(max-width: 750px) {
+    .container-work{
+        display: block;
+    }
+
+    .container-screen-shot img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+    .h3-title {
+        font-size: 20px;
+    }
+
+    .h1-title {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 380px) {
+    .container-technologies-list {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .technology-item {
+        width: 100%;
     }
 }
